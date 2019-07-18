@@ -1,0 +1,28 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.6.RELEASE' apply false
+    id 'java'
+}
+
+allprojects {
+    ext {
+        set('springCloudVersion', "Greenwich.SR2")
+    }
+
+    group = 'com.xhhuango'
+    version = '0.0.1-SNAPSHOT'
+    sourceCompatibility = '1.8'
+}
+
+subprojects {
+    apply plugin: 'io.spring.dependency-management'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+        }
+    }
+}
