@@ -5,4 +5,7 @@ pluginManagement {
 }
 rootProject.name = 'cloud'
 
-include 'eureka', 'hello-world-service', 'app'
+include 'eureka',
+        'app',
+        'hello-world-service',
+        'goodbye-service'
