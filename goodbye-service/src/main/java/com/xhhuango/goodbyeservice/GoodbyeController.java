@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class GoodbyeController {
     @GetMapping("/say")
-    public String sayGoodbye(@RequestParam(required = false) String name) {
-        return name == null ? "Goodbye!" : "Goodbye, " + name + "!";
+    public String sayGoodbye(@RequestParam String name) {
+        return "Goodbye, " + name + "!";
     }
 }
