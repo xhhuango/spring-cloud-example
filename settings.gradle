@@ -7,5 +7,6 @@ rootProject.name = 'cloud'
 
 include 'eureka',
         'gateway',
+        'zuul',
         'hello-world-service',
         'goodbye-service'
