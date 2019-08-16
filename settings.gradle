@@ -6,6 +6,6 @@ pluginManagement {
 rootProject.name = 'cloud'
 
 include 'eureka',
-        'app',
+        'gateway',
         'hello-world-service',
         'goodbye-service'
